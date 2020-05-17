@@ -56,9 +56,21 @@ body {
     background: linear-gradient(315deg, #ff0000, #ffc107);
 }
 
+.holder .cart:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .05);
+    pointer-events: none;
+}
+
 .descr {
     position: relative;
     padding: 20px;
+    transform: translateY(40px);
 }
 
 .cart .descr h2 {
@@ -109,4 +121,9 @@ body {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+}
+
+.cart .descr a:hover {
+    color: #000;
+    background-color: #fff;
 }
